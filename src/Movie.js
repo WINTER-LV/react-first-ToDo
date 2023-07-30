@@ -12,8 +12,8 @@ function MovieList() {
             </nav>
 
             <Routes>
-                <Route path='/Home' element={<Home />} />
-                <Route path='/Detail/:useParamId' element={<Detail />} />
+                <Route path={`${process.env.PUBLIC_URL}/Home`} element={<Home />} />
+                <Route path={`${process.env.PUBLIC_URL}/Detail/:useParamId`} element={<Detail />} />
             </Routes>
 
         </Router>
